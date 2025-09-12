@@ -19,7 +19,7 @@ export default function PostModel({ post, onClose, onNext, onPrev }) {
           {/* Image */}
           <div className="relative w-full md:w-1/2 h-64 rounded-md overflow-hidden border border-white/10">
             <Image
-              src={post.image}
+              src={post.imageUrl}
               alt={post.title}
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
@@ -30,11 +30,11 @@ export default function PostModel({ post, onClose, onNext, onPrev }) {
 
           {/* Text */}
           <div className="md:w-1/2 space-y-3">
-            <p className="text-gray-200">{post.fullDescription}</p>
+            <p className="text-gray-200">{post.plaintextBody}</p>
             <div className="flex flex-wrap gap-2">
-              {post.tags.map((t) => (
-                <span key={t} className="text-xs px-2.5 py-0.5 rounded border border-white/15 bg-white/5">
-                  {t}
+              {post.categories.map((category, i) => (
+                <span key={`${post.id}-${category}-${i}`} className="text-xs px-2.5 py-0.5 rounded border border-white/15 bg-white/5">
+                  {category.title}
                 </span>
               ))}
             </div>

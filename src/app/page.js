@@ -1,4 +1,3 @@
-import ProjectSection from "./components/ProjectSection";
 import PostSection from "./components/PostSection";
 export default function Home() {
   return (
@@ -31,9 +30,6 @@ export default function Home() {
       </nav>
       <div>
         <PostSection />
-      </div>
-      <div>
-        <ProjectSection />
       </div>
     </main>
   );
