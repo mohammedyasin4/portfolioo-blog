@@ -1,4 +1,4 @@
-import ProjectSection from "./components/ProjectSection";
+import PostSection from "./components/PostSection";
 export default function Home() {
   return (
     <main className="container  mx-auto p-8 pb-20 items-center justify-center bg-gray-900 text-white relative overflow-hidden">
@@ -29,7 +29,7 @@ export default function Home() {
         </div>
       </nav>
       <div>
-        <ProjectSection />
+        <PostSection />
       </div>
     </main>
   );
