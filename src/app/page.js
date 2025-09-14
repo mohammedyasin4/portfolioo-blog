@@ -1,12 +1,14 @@
+import Link from "next/link";
 import PostSection from "./components/PostSection";
+
 export default function Home() {
   return (
+
     <main className="container  mx-auto p-8 pb-20 items-center justify-center bg-gray-900 text-white relative overflow-hidden">
- 
+      <Link href="/about" className="px-4 py-2">About</Link>
       <div className="absolute inset-0 -z-10 flex items-center justify-center">
         <div className="w-[700px] h-[700px] rounded-full bg-red-400 opacity-25 blur-[160px]"></div>
       </div>
-
       <nav className="  flex flex-col items-center justify-center text-center">
         <h1 className="text-3xl font-extrabold mt-9">
           Junior{" "}
@@ -18,15 +20,6 @@ export default function Home() {
           user-friendly web applications. I enjoy learning best practices for
           responsive design.
         </p>
-
-        <div className="flex justify-center mt-8 gap-5">
-          <button className="px-8 py-5 rounded-md bg-red-300 font-bold text-white hover:bg-red-400 transition-all">
-            About Me
-          </button>
-          <button className="px-8 py-5 rounded-md bg-red-300 font-bold text-white hover:bg-red-400 transition-all">
-            Contact Me
-          </button>
-        </div>
       </nav>
       <div>
         <PostSection />
