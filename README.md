@@ -1,3 +1,13 @@
+``` .env.local
+NEXT_PUBLIC_SANITY_PROJECT_ID="ef2j07pj"
+NEXT_PUBLIC_SANITY_DATASET="production"
+NEXT_PUBLIC_SANITY_API_DEV_TOKEN="skyaFAs7o8dEeMVU3w7yaeZYEgTwKcZFJGeLnFlHKuGJaGYq3Abt0B7qiinO45TdMMTcz67rUA2k8QJX6YwXDEPaQQSuPbolvNEauyRocYNzgBQf4zUo7lpmSfqwV8m0qt0OYXhXICAzq697Ib8iPkzcmeOXtVldQnUgigQsC5kh79O7UiiJ"
+```
+
+
+
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
